@@ -121,11 +121,9 @@ main a {
     color:rgb(0, 0, 0);
 }
 #sobre p{
-    display: flex;
-    flex-direction: column;
     align-self: center;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 1.5em;
     margin-bottom: 2.5em;
 }
 #sobre a{
@@ -139,7 +137,8 @@ main a {
 #sobre a:hover{
     background-color: #dbd7d7;
     width: 80px;
-    height: 30px;
+    height: 20px;
+    border-radius: 8px;
     padding-top: 6px;
 }
 #servicos div {
