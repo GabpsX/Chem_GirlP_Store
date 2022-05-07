@@ -7,30 +7,96 @@
         
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Chem Girl Store</title>
+        <title>Chem Girl Papelaria Artesanal</title>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@500&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="CSS/normalize.css">
         <link rel="stylesheet" href="CSS/style.css">
         <link rel="stylesheet" href="CSS/buttons.css">  
     </head>
+<style>
+    .overlay {
+        height: 100%;
+        width: 100%;
+        display: none;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        }
+      }
+    </style>
 
     <body id = "back">
         <nav class="menu">
             <img src="ico.png" alt="logo">
-            <p>Chem Girl Store</p>
+            <p>Chem Girl Papelaria Artesanal</p>
             <ul>
-                <div class="box">
                     <a href="index.html"><img src="menu_img/icons8-reserva-40.png" /></a>
-                </div>
 
-                <div class="box">
                     <a href="#footer"><img src="menu_img/icons8-phone-64.png" /></a>
-                </div>
-                <div class="box">
+                
                     <a href="#sobre"><img src="menu_img/icons8-sobre-48.png" /></a>
-                </div>
             </ul>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html"><img src="menu_img/icons8-reserva-40.png" />Home</a>
+
+                    <a href="#footer"><img src="menu_img/icons8-phone-64.png" />Phone</a>
+                
+                    <a href="#sobre"><img src="menu_img/icons8-sobre-48.png" />About</a>
+                </div>
+              </div>
+              <span style="font-size:30px;cursor:pointer;color: #f1f1f1;border:none;position: relative;top: 10%;" onclick="openNav()">&#9776;</span>
         </nav>
+
+        <script>
+            function openNav() {
+              document.getElementById("myNav").style.display = "block";
+            }
+            
+            function closeNav() {
+              document.getElementById("myNav").style.display = "none";
+            }
+        </script>
           
         <main id = "topo">
             <img src="img/camera.png" alt="">

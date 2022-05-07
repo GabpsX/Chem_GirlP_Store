@@ -15,19 +15,15 @@ h1, h2, h3 {
     width: 100%;
     z-index: 999;
     padding-top: -5px;
-    height: 55px;
+    height: 60px;
+    background-color: #29292e;
 }
 .menu ul a img {
-    width: 45px;
+    width:3em;
 }
-.menu area:hover{
-    display: inline-block;
-    background-color: #008CBA
-}
+
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 .menu p{
-    display: inline-block;
-   
     position: relative;
     top: -2px;
     font-family: 'Lobster', cursive;
@@ -47,10 +43,7 @@ nav ul {
     padding: 0;
     width: 20%;
 }
-nav ul li {
-    align-items: left;
 
-}
 nav ul li a {
     display: inline-block;
     width: 100%;
@@ -216,17 +209,7 @@ hr{
 	text-align: center;
 	overflow: hidden;
 }
-.box {
-	padding: 4.5em 0;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-webkit-justify-content: center;
-	justify-content: center;
-}
+
 /* Box colors */
 .bg-1 {
 	background: #ECEFF1;
@@ -241,7 +224,15 @@ hr{
 	color: #fff;
 }
 @media screen and (min-width: 768px) {
-
+    .menu ul a img:hover {
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.2);
+        max-width: 100%;
+        -moz-transition: all 0.9s;
+        -webkit-transition: all 0.9s;
+        transition: all 0.9s;
+}
     nav {
         flex-direction: row;
         justify-content: space-around;
@@ -418,15 +409,7 @@ hr{
 .menu p{
     font-size: 1.1em;
 }
-.menu ul a img:hover {
-        -moz-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        transform: scale(1.2);
-        max-width: 100%;
-        -moz-transition: all 0.9s;
-        -webkit-transition: all 0.9s;
-        transition: all 0.9s;
-}
+
 #img1:hover {
 	-moz-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
@@ -549,22 +532,19 @@ button:hover {
 button:focus~ul {
     height: 240px;
 }
-@media (max-width:353px) {
+@media (max-width: 767px) {
+    .menu img {
+        position: relative;
+        left: 10px;
+    }
     .menu p {
         display: none;
     }
-}
-@media (max-width: 767px) {
-    .menu p {
-        position: relative;
-        left: -50px;
-        top: 4px;
+    .menu ul a {
+        display: none;
     }
-    .menu  ul a{
-        position: relative;
-        display: inline-block;
-        padding: 1 0px;
-    }
+
+
     #topo img{
         width: 100%;
     }
