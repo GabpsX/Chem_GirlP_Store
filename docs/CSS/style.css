@@ -259,13 +259,14 @@ hr{
 }
 
 #servicos {
+    margin-left: auto;
+    margin-right: auto;
     color: #FFF;
     background: #000000bb;
     flex-direction: row;
     flex-wrap: wrap;
     align-self:flex-start;
-    max-width: 1000px;
-    margin: 5px 0.5em;
+    margin: 0 0.5em;
 
 }
 #servicos h2{
