@@ -530,6 +530,16 @@ button:hover {
 button:focus~ul {
     height: 240px;
 }
+@media (max-width: 1175px){
+    .menu p {
+        display: none;
+    }
+    .menu img {
+        position: relative;
+        left: -50px;
+        float: left;
+    }
+}
 @media (max-width: 767px) {
     .menu img {
         position: relative;
