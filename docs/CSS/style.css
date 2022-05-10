@@ -223,6 +223,22 @@ hr{
 	background: #37474f;
 	color: #fff;
 }
+@media(max-width: 1167px) {
+    *{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .menu ul a{
+        padding: 0 5px;
+        padding-left: 100px;
+    }
+    .menu p{
+        position: relative;
+    }
+    #topo img{
+        width: 60%;
+    }
+}
 @media screen and (min-width: 768px) {
     .menu ul a img:hover {
         -moz-transform: scale(1.1);
@@ -559,7 +575,7 @@ button:hover {
 button:focus~ul {
     height: 240px;
 }
-@media (max-width: 767px) {
+@media (max-width:1170px) {
     .menu img {
         position: relative;
         left: 10px;
